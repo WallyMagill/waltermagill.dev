@@ -1,8 +1,7 @@
 export const SITE_CONFIG = {
   name: 'Walter Magill',
   title: 'Full-Stack Developer',
-  description:
-    'Computer Science graduate specializing in full-stack development, data science, and modern web technologies.',
+  description: 'Recent graduate with a Bachelor\'s of Arts in Computer Science, modified with Economics from Dartmouth College.',
   url: 'https://waltermagill.dev',
   email: 'walter@waltermagill.dev',
   github: 'https://github.com/waltermagill',
@@ -23,3 +22,15 @@ export const TECH_STACK = {
   backend: ['Node.js', 'Express', 'PostgreSQL', 'MongoDB'],
   tools: ['Git', 'Docker', 'AWS', 'Vercel'],
 };
+
+// Typewriter animation words for the hero section
+export const TYPEWRITER_WORDS = [
+  'a Learner',
+  'a Coder', 
+  'an Athlete',
+  'a Problem Solver',
+  'a Creator',
+  'an Innovator',
+  'a Developer',
+  'an Analyst'
+];
