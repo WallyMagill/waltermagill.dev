@@ -7,7 +7,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 4rem; /* Account for fixed header */
+    scroll-padding-top: 6rem; /* Account for fixed header */
   }
 
   body {
@@ -38,6 +38,12 @@
     @apply transition-colors duration-200;
   }
 
+  /* Enhanced backdrop blur support */
+  .backdrop-blur-md {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
   /* Custom scrollbar for webkit browsers */
   ::-webkit-scrollbar {
     width: 8px;
@@ -53,5 +59,16 @@
 
   ::-webkit-scrollbar-thumb:hover {
     @apply bg-gray-400 dark:bg-gray-500;
+  }
+
+  /* Ensure hero section takes full viewport height minus header */
+  #hero {
+    min-height: calc(100vh - 4rem);
+  }
+
+  @media (min-width: 1024px) {
+    #hero {
+      min-height: calc(100vh - 5rem);
+    }
   }
 }
