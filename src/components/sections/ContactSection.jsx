@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
 import { SITE_CONFIG } from '../../utils/constants';
-import { Mail, Github, Linkedin, Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
+import { Mail, Github, Linkedin, Send, CheckCircle, AlertCircle, Loader2, Download } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 
 const ContactSection = () => {
@@ -17,6 +17,18 @@ const ContactSection = () => {
   });
   const [formStatus, setFormStatus] = useState('idle'); // 'idle', 'loading', 'success', 'error'
   const [errors, setErrors] = useState({});
+
+  // Function to handle resume download
+  const handleResumeDownload = () => {
+    // Create a temporary blank PDF for now
+    // You'll replace this with your actual resume file later
+    const link = document.createElement('a');
+    link.href = '/resume.pdf'; // This will be your actual resume file
+    link.download = 'Walter_Magill_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   // Handle input changes
   const handleChange = (e) => {
@@ -160,6 +172,22 @@ const ContactSection = () => {
                   <span>LinkedIn</span>
                 </a>
               </div>
+
+              {/* Resume Download Button */}
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
+                transition={{ duration: 0.6, delay: 0.6 }}
+                className="mt-6"
+              >
+                <button
+                  onClick={handleResumeDownload}
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all duration-200 font-medium shadow-md hover:shadow-lg transform hover:scale-105 text-sm"
+                >
+                  <Download className="w-4 h-4" />
+                  Download Resume
+                </button>
+              </motion.div>
             </motion.div>
 
             {/* Contact Form */}
