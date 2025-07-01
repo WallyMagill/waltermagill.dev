@@ -34,24 +34,27 @@ const ProjectsSection = () => {
                 >
                   {/* Project Image */}
                   <div className="h-48 bg-gray-200 dark:bg-gray-700 overflow-hidden relative">
-                    {typeof project.image === 'string' ? (
-                      // Placeholder mode (for when using string filenames)
-                      <div className="flex items-center justify-center h-full">
-                        <span className="text-gray-500 dark:text-gray-400 text-sm text-center px-4">
-                          {project.image.split('/').pop()}
-                          <br />
-                          <span className="text-xs opacity-75">Image placeholder</span>
-                        </span>
-                      </div>
-                    ) : (
-                      // Actual image mode (for when using imported images)
+                    {project.image ? (
                       <img 
                         src={project.image} 
                         alt={`${project.title} screenshot`}
                         className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
                         loading="lazy"
+                        onError={(e) => {
+                          // Fallback if image fails to load
+                          e.target.style.display = 'none';
+                          e.target.nextSibling.style.display = 'flex';
+                        }}
                       />
-                    )}
+                    ) : null}
+                    {/* Fallback placeholder */}
+                    <div className="hidden items-center justify-center h-full text-gray-500 dark:text-gray-400 text-sm text-center px-4">
+                      <div>
+                        <div className="mb-2">📸</div>
+                        <div>{project.title}</div>
+                        <div className="text-xs opacity-75">Project Screenshot</div>
+                      </div>
+                    </div>
                   </div>
                   
                   <div className="p-6">
@@ -143,7 +146,7 @@ const ProjectsSection = () => {
               className="inline-flex items-center gap-2 px-6 py-3 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors font-medium"
             >
               <Github className="w-5 h-5" />
-              View More on GitHub
+              View My GitHub
             </a>
           </motion.div>
         </motion.div>
