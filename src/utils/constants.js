@@ -3,9 +3,9 @@ export const SITE_CONFIG = {
   title: 'Full-Stack Developer',
   description: 'Recent graduate with a Bachelor\'s of Arts in Computer Science, modified with Economics from Dartmouth College.',
   url: 'https://waltermagill.dev',
-  email: 'walter@waltermagill.dev',
-  github: 'https://github.com/waltermagill',
-  linkedin: 'https://linkedin.com/in/waltermagill',
+  email: 'walter.g.magill@gmail.com',
+  github: 'https://github.com/WallyMagill',
+  linkedin: 'https://www.linkedin.com/in/walter-magill-40023a249/',
 };
 
 export const NAVIGATION = [
