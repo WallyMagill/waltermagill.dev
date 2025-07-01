@@ -33,20 +33,23 @@ const ProjectsSection = () => {
                   className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow group max-w-sm w-full"
                 >
                   {/* Project Image */}
-                  <div className="h-48 bg-gray-200 dark:bg-gray-700 flex items-center justify-center overflow-hidden">
+                  <div className="h-48 bg-gray-200 dark:bg-gray-700 overflow-hidden relative">
                     {typeof project.image === 'string' ? (
                       // Placeholder mode (for when using string filenames)
-                      <span className="text-gray-500 dark:text-gray-400 text-sm text-center px-4">
-                        {project.image.split('/').pop()}
-                        <br />
-                        <span className="text-xs opacity-75">Image placeholder</span>
-                      </span>
+                      <div className="flex items-center justify-center h-full">
+                        <span className="text-gray-500 dark:text-gray-400 text-sm text-center px-4">
+                          {project.image.split('/').pop()}
+                          <br />
+                          <span className="text-xs opacity-75">Image placeholder</span>
+                        </span>
+                      </div>
                     ) : (
                       // Actual image mode (for when using imported images)
                       <img 
                         src={project.image} 
                         alt={`${project.title} screenshot`}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                        loading="lazy"
                       />
                     )}
                   </div>
