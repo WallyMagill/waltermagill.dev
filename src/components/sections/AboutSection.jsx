@@ -99,7 +99,7 @@ const AboutSection = () => {
             </motion.div>
           </div>
 
-          {/* Original Text Content Layout */}
+          {/* Text Content Layout */}
           <div className="space-y-12">
             {Object.entries(ABOUT_ME.sections).map(([key, section], index) => (
               <motion.div
@@ -123,25 +123,20 @@ const AboutSection = () => {
             ))}
           </div>
 
-          {/* Resume Download Section */}
+          {/* Simple Resume Download Button */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 1.2 }}
             className="mt-16 text-center"
           >
-            <div className="bg-white dark:bg-gray-700 rounded-xl p-8 shadow-lg border border-gray-200 dark:border-gray-600">
-              <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-                Want to learn more about my experience and qualifications? Download my resume below.
-              </p>
-              <button
-                onClick={handleResumeDownload}
-                className="inline-flex items-center gap-2 px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all duration-200 font-medium shadow-md hover:shadow-lg transform hover:scale-105"
-              >
-                <Download className="w-5 h-5" />
-                Download Resume
-              </button>
-            </div>
+            <button
+              onClick={handleResumeDownload}
+              className="inline-flex items-center gap-2 px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all duration-200 font-medium shadow-md hover:shadow-lg transform hover:scale-105"
+            >
+              <Download className="w-5 h-5" />
+              Download Resume
+            </button>
           </motion.div>
         </motion.div>
       </div>

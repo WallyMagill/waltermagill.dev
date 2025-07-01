@@ -3,6 +3,7 @@ import AboutSection from '../components/sections/AboutSection';
 import TechStackSection from '../components/sections/TechStackSection';
 import ProjectsSection from '../components/sections/ProjectsSection';
 import ExperienceSection from '../components/sections/ExperienceSection';
+import CommunitySection from '../components/sections/CommunitySection';
 import ContactSection from '../components/sections/ContactSection';
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
       <TechStackSection />
       <ProjectsSection />
       <ExperienceSection />
+      <CommunitySection />
       <ContactSection />
     </div>
   );
