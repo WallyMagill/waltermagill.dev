@@ -35,15 +35,11 @@ export const TECH_STACK = {
       },
       "Java": {
         description: "An object-oriented language known for reliability and scalability.",
-        usage: "I used it to implement data structures and build simple Android apps."
+        usage: "I used it to implement data structures and solving object-oriented problems."
       },
       "C": {
         description: "A low-level language commonly used in systems programming.",
-        usage: "I've worked with C to understand memory management and OS fundamentals."
-      },
-      "C++": {
-        description: "A compiled language that extends C with object-oriented features.",
-        usage: "I used it in algorithms coursework and competitive programming."
+        usage: "I've worked with C to understand memory management."
       },
       "C#": {
         description: "A Microsoft-backed language used for desktop, web, and game development.",
@@ -72,7 +68,7 @@ export const TECH_STACK = {
       },
       "Tailwind CSS": {
         description: "A utility-first CSS framework for building custom designs rapidly.",
-        usage: "I've used it across all my frontend projects for responsive styling."
+        usage: "I've used it across my frontend projects for responsive styling."
       },
       "Redux Toolkit": {
         description: "A modern approach to state management in React apps.",
@@ -105,7 +101,7 @@ export const TECH_STACK = {
       },
       "OpenAI API": {
         description: "A powerful API for accessing GPT models.",
-        usage: "I used it to experiment with generative AI in side projects."
+        usage: "I used it to experiment with generative AI in an internship."
       }
     }
   },
@@ -114,11 +110,11 @@ export const TECH_STACK = {
     technologies: {
       "Docker": {
         description: "A platform for creating isolated, reproducible app environments.",
-        usage: "I used it to containerize my Node apps for testing and deployment."
+        usage: "I've used it to containerize my Node apps for testing and deployment."
       },
-      "AWS (EC2, S3, Lambda)": {
+      "Amazon Web Services (AWS)": {
         description: "A cloud platform offering compute, storage, and services.",
-        usage: "I used EC2 and S3 to host projects and manage assets."
+        usage: "I've explored AWS to host projects and manage assets."
       },
       "Google Cloud Platform (GCP)": {
         description: "A cloud provider with services for hosting and ML.",
@@ -126,7 +122,7 @@ export const TECH_STACK = {
       },
       "Render": {
         description: "A simple PaaS for full-stack app hosting.",
-        usage: "I used Render to deploy MERN stack apps with CI."
+        usage: "I used Render to deploy websites and projects."
       },
       "Vercel": {
         description: "A frontend-optimized hosting service, ideal for Next.js.",
@@ -168,7 +164,7 @@ export const TECH_STACK = {
     technologies: {
       "Object-Oriented Programming (OOP)": {
         description: "A paradigm based on classes and encapsulated logic.",
-        usage: "I applied OOP in Java and C# to design modular systems."
+        usage: "I applied OOP in Java and C to design modular systems."
       },
       "Algorithms & Data Structures": {
         description: "Core CS concepts for solving computational problems efficiently.",
