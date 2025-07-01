@@ -128,9 +128,6 @@ const Layout = ({ children }) => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center text-gray-600 dark:text-gray-400">
             <p>&copy; 2024 Walter Magill. All rights reserved.</p>
-            <p className="text-sm mt-2">
-              Interactive particles background inspired by modern web design techniques.
-            </p>
           </div>
         </div>
       </footer>
