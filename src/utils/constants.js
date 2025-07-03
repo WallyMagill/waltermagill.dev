@@ -197,3 +197,4 @@ export const TYPEWRITER_WORDS = [
   'a Developer',
   'an Analyst'
 ];
+

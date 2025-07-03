@@ -1,5 +1,5 @@
 import { useTheme } from '../../hooks/useTheme';
-import { Moon, Sun, Menu, X } from 'lucide-react';
+import { Moon, Sun, Menu, X, MapPin } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
 
 const Layout = ({ children }) => {
@@ -126,8 +126,17 @@ const Layout = ({ children }) => {
       {/* Footer */}
       <footer className="bg-gray-50 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="text-center text-gray-600 dark:text-gray-400">
-            <p>&copy; 2024 Walter Magill. All rights reserved.</p>
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-gray-600 dark:text-gray-400">
+            {/* Copyright */}
+            <div className="text-center sm:text-left">
+              <p>&copy; 2024 Walter Magill. All rights reserved.</p>
+            </div>
+            
+            {/* Location */}
+            <div className="flex items-center gap-2 text-center sm:text-right">
+              <MapPin className="w-4 h-4" />
+              <span>Stowe, Vermont</span>
+            </div>
           </div>
         </div>
       </footer>

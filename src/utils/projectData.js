@@ -2,10 +2,10 @@
 // This file centralizes all project information for the Projects section
 
 // Import images from assets folder
-import lessonlinkImage from '../assets/images/lessonlink-screenshot.jpg';
-import echoEchoImage from '../assets/images/echo-echo-screenshot.jpg';
-import neuralNetworkImage from '../assets/images/neural-network-chart.jpg';
-import tseImage from '../assets/images/tse-diagram.jpg';
+import lessonlinkImage from '../assets/lessonlink-screenshot.jpg';
+import echoEchoImage from '../assets/echo-echo-screenshot.jpg';
+import neuralNetworkImage from '../assets/neural-network-chart.jpg';
+import tseImage from '../assets/tse-diagram.jpg';
 
 export const PROJECTS = [
   {

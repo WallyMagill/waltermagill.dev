@@ -4,7 +4,7 @@ import { useRef } from 'react';
 import { Download } from 'lucide-react';
 import { ABOUT_ME } from '../../utils/aboutData';
 // Import your headshot image - choose one of these based on which you prefer
-import headshotImage from '../../assets/images/headshot-4x5.jpg';
+import headshotImage from '../../assets/headshot-4x5.jpg';
 // import headshotImage from '../../assets/images/headshot-1x1.jpg';
 
 const AboutSection = () => {
