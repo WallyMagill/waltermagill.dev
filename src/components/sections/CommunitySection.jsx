@@ -1,5 +1,4 @@
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Calendar, MapPin, Building, Heart } from 'lucide-react';
 import { communityData } from '../../utils/communityData';

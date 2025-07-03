@@ -1,5 +1,4 @@
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
 import { SITE_CONFIG } from '../../utils/constants';
 import { Mail, Github, Linkedin, Send, CheckCircle, AlertCircle, Loader2, Download } from 'lucide-react';
