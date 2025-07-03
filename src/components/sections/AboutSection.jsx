@@ -47,15 +47,15 @@ const AboutSection = () => {
 
   /**
    * Handles resume download functionality
-   * Creates temporary download link for PDF file
+   * Creates a temporary download link and triggers the download
+   * Provides graceful fallback for missing resume file
    * 
-   * Note: Replace '/resume.pdf' with actual resume file path
-   * when ready for production deployment
+   * @returns {void}
    */
   const handleResumeDownload = () => {
     try {
       const link = document.createElement('a');
-      link.href = '/resume.pdf'; // Update this path with actual resume file
+      link.href = '/Walter_Magill_Resume.pdf';
       link.download = 'Walter_Magill_Resume.pdf';
       link.style.display = 'none'; // Hide link element
       

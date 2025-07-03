@@ -93,16 +93,17 @@ const ContactSection = () => {
   const handleResumeDownload = () => {
     try {
       const link = document.createElement('a');
-      link.href = '/resume.pdf'; // Replace with actual resume file path
+      link.href = '/Walter_Magill_Resume.pdf';
       link.download = 'Walter_Magill_Resume.pdf';
-      link.style.display = 'none';
+      link.style.display = 'none'; // Hide link element
       
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
     } catch (error) {
-      console.warn('Resume download failed:', error);
-      // Could implement user notification here in production
+      console.error('Resume download failed:', error);
+      // Fallback: open in new tab if download fails
+      window.open('/resume.pdf', '_blank');
     }
   };
 
