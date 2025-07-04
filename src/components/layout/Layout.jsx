@@ -2,8 +2,9 @@
  * Main layout component providing site-wide structure and navigation
  * 
  * Implements a responsive header with smooth scroll navigation, theme toggling,
- * and mobile-friendly menu. The header uses a backdrop blur effect that appears
- * on scroll for improved readability while maintaining visual appeal.
+ * and mobile-friendly menu. The header uses different background strategies:
+ * - Mobile: Always has background to prevent text overlay
+ * - Desktop: Transparent until scrolled, then backdrop blur appears
  * 
  * @author Walter Magill
  */
@@ -29,8 +30,9 @@ const NAVIGATION_ITEMS = [
  * 
  * Features:
  * - Responsive navigation with mobile menu
+ * - Mobile-first header background to prevent text overlay
+ * - Desktop transparent header with scroll-triggered background
  * - Smooth scroll behavior with programmatic section navigation
- * - Dynamic header background that appears on scroll
  * - Theme toggle with system preference support
  * - Professional footer with location info
  * 
@@ -95,9 +97,17 @@ const Layout = ({ children }) => {
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
-      {/* Fixed Header with Dynamic Background */}
+      {/* Fixed Header with Responsive Background Strategy */}
       <header className="fixed top-0 left-0 w-full z-50 transition-all duration-300">
-        <div className="relative flex items-center justify-between h-16 px-4 sm:px-8">
+        {/* 
+          Mobile-first background: Always visible on mobile to prevent text overlay
+          Desktop: Completely transparent - no background at any time
+        */}
+        <div className={`
+          relative flex items-center justify-between h-16 px-4 sm:px-8
+          bg-white/90 dark:bg-gray-900/90 backdrop-blur-md
+          md:bg-transparent md:backdrop-blur-none
+        `}>
           
           {/* Site Branding */}
           <div className="flex items-center flex-1 min-w-0">
