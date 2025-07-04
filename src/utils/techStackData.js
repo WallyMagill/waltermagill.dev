@@ -26,138 +26,166 @@ export const TECH_STACK = {
   languages: {
     title: "Languages",
     technologies: {
+      "JavaScript (ES6+)": {
+        description: "A dynamic scripting language for building interactive websites.",
+        usage: "I've used it to create responsive UIs and handle client-side logic."
+      },
+      "TypeScript": {
+        description: "A statically typed superset of JavaScript that improves error detection.",
+        usage: "I've used it to add type safety and refactor large React codebases."
+      },
       "Python": {
-        description: "High-level programming language known for readability and versatility.",
-        usage: "Built neural networks from scratch, data analysis projects, and automation scripts."
-      },
-      "JavaScript": {
-        description: "Dynamic programming language essential for modern web development.",
-        usage: "Frontend interactivity, React applications, API integrations, and full-stack development."
-      },
-      "C": {
-        description: "Low-level systems programming language for performance-critical applications.",
-        usage: "Built a complete search engine with memory management and data structures."
-      },
-      "C#": {
-        description: "Object-oriented language primarily used for Unity game development.",
-        usage: "Developed a 2D time-travel puzzle game with custom physics and animations."
+        description: "A versatile, beginner-friendly language used in many domains.",
+        usage: "I've used it for scripting, backend APIs, and algorithm practice."
       },
       "Java": {
-        description: "Object-oriented language used for enterprise applications and algorithms.",
-        usage: "Coursework in algorithms, data structures, and object-oriented design patterns."
+        description: "An object-oriented language known for reliability and scalability.",
+        usage: "I used it to implement data structures and solving object-oriented problems."
+      },
+      "C": {
+        description: "A low-level language commonly used in systems programming.",
+        usage: "I've worked with C to understand memory management."
+      },
+      "C#": {
+        description: "A Microsoft-backed language used for desktop, web, and game development.",
+        usage: "I used it to create gameplay systems in Unity."
+      },
+      "HTML5": {
+        description: "The markup standard for structuring content on the web.",
+        usage: "I've used it to build accessible, semantic web layouts."
+      },
+      "CSS3": {
+        description: "A stylesheet language for customizing web layouts and animations.",
+        usage: "I've used it with Tailwind to style responsive UIs."
       }
     }
   },
   frontend: {
     title: "Frontend",
     technologies: {
-      "React": {
-        description: "Component-based JavaScript library for building user interfaces.",
-        usage: "Built multiple web applications including this portfolio and collaborative educational tools."
+      "React.js": {
+        description: "A JavaScript library for building component-based user interfaces.",
+        usage: "I used React to build dynamic, single-page apps and reusable UI elements."
       },
-      "HTML/CSS": {
-        description: "Markup and styling languages fundamental to web development.",
-        usage: "Semantic markup, responsive design, CSS Grid/Flexbox, and modern styling techniques."
+      "Next.js": {
+        description: "A React framework that adds SSR, routing, and optimizations.",
+        usage: "I used it for statically generated project pages and routing in my portfolio."
       },
       "Tailwind CSS": {
-        description: "Utility-first CSS framework for rapid UI development.",
-        usage: "Styled this portfolio and other projects with responsive, maintainable CSS."
+        description: "A utility-first CSS framework for building custom designs rapidly.",
+        usage: "I've used it across my frontend projects for responsive styling."
       },
-      "Vite": {
-        description: "Fast build tool and development server for modern web projects.",
-        usage: "Used as the build system for React applications, improving development speed."
+      "Redux Toolkit": {
+        description: "A modern approach to state management in React apps.",
+        usage: "I used it to manage global UI state in complex component trees."
       },
       "Framer Motion": {
-        description: "React animation library for creating smooth, interactive animations.",
-        usage: "Added scroll-triggered animations and micro-interactions to enhance user experience."
+        description: "A React animation library for UI transitions and motion effects.",
+        usage: "I used it to add subtle animations to navbars and interactive elements."
       }
     }
   },
   backend: {
-    title: "Backend",
+    title: "Backend & APIs",
     technologies: {
       "Node.js": {
-        description: "JavaScript runtime for building scalable server-side applications.",
-        usage: "Created REST APIs and backend services for full-stack web applications."
+        description: "A JavaScript runtime that allows server-side development.",
+        usage: "I've used Node.js to create backend servers for full-stack apps."
       },
-      "Express": {
-        description: "Minimal web framework for Node.js applications.",
-        usage: "Built RESTful APIs with authentication, routing, and middleware integration."
+      "Express.js": {
+        description: "A minimal Node.js framework for handling HTTP requests.",
+        usage: "I used Express to build RESTful APIs for user and project data."
       },
       "MongoDB": {
-        description: "NoSQL document database for flexible data storage.",
-        usage: "Designed schemas and managed data for collaborative educational platform."
+        description: "A document-based NoSQL database.",
+        usage: "I used it to store user info and project metadata in web apps."
       },
-      "RESTful APIs": {
-        description: "Architectural style for designing networked applications.",
-        usage: "Designed and implemented APIs for data exchange between frontend and backend."
+      "REST APIs": {
+        description: "Standard web APIs that use HTTP for communication.",
+        usage: "I built and consumed REST APIs for frontend/backend integration."
+      },
+      "OpenAI API": {
+        description: "A powerful API for accessing GPT models.",
+        usage: "I used it to experiment with generative AI in an internship."
       }
     }
   },
   cloud: {
     title: "Cloud & DevOps",
     technologies: {
-      "Google Cloud Functions": {
-        description: "Serverless computing platform for event-driven applications.",
-        usage: "Optimized API call sequences and reduced latency for chatbot integrations."
+      "Docker": {
+        description: "A platform for creating isolated, reproducible app environments.",
+        usage: "I've used it to containerize my Node apps for testing and deployment."
       },
-      "OpenAI API": {
-        description: "AI-powered API for natural language processing and generation.",
-        usage: "Integrated chatbot functionality and prompt engineering for AI applications."
+      "Amazon Web Services (AWS)": {
+        description: "A cloud platform offering compute, storage, and services.",
+        usage: "I've explored AWS to host projects and manage assets."
       },
-      "Git": {
-        description: "Distributed version control system for tracking code changes.",
-        usage: "Daily workflow for project management, collaboration, and code history."
+      "Google Cloud Platform (GCP)": {
+        description: "A cloud provider with services for hosting and ML.",
+        usage: "I've used GCP for deploying APIs and running experiments."
       },
-      "GitHub": {
-        description: "Web-based Git repository hosting and collaboration platform.",
-        usage: "Code hosting, issue tracking, project management, and portfolio showcase."
+      "Render": {
+        description: "A simple PaaS for full-stack app hosting.",
+        usage: "I used Render to deploy websites and projects."
+      },
+      "Vercel": {
+        description: "A frontend-optimized hosting service, ideal for Next.js.",
+        usage: "I used Vercel to deploy my portfolio and static frontend projects."
       }
     }
   },
   tools: {
-    title: "Tools & Environments",
+    title: "Tools & Platforms",
     technologies: {
-      "Unity": {
-        description: "Cross-platform game engine for 2D and 3D game development.",
-        usage: "Developed complete 2D puzzle game with physics, animations, and level design."
+      "Git": {
+        description: "A version control system for tracking code changes.",
+        usage: "I use Git daily for branching and committing in collaborative projects."
       },
-      "AutoCAD Civil 3D": {
-        description: "Professional CAD software for civil engineering and surveying.",
-        usage: "Created high-precision topographic maps and engineering drawings."
+      "GitHub": {
+        description: "A cloud platform for sharing and deploying Git repositories.",
+        usage: "I host all my public projects and manage issues on GitHub."
+      },
+      "Linux": {
+        description: "An open-source operating system widely used in dev environments.",
+        usage: "I use Linux commands for scripting and managing local servers."
+      },
+      "Postman": {
+        description: "A tool for testing and debugging APIs.",
+        usage: "I used Postman to test REST endpoints during backend development."
       },
       "VS Code": {
-        description: "Popular code editor with extensive extension ecosystem.",
-        usage: "Primary development environment for all coding projects and debugging."
+        description: "A fast, extensible code editor.",
+        usage: "I've customized VS Code extensively for frontend and backend workflows."
       },
-      "NumPy": {
-        description: "Fundamental package for scientific computing in Python.",
-        usage: "Mathematical operations and array processing for neural network implementation."
+      "Figma": {
+        description: "A design tool for UI prototyping and collaboration.",
+        usage: "I've used Figma to mock layouts before building them in code."
       }
     }
   },
   practices: {
-    title: "Practices & Methodologies",
+    title: "Engineering Practices",
     technologies: {
-      "Responsive Design": {
-        description: "Design approach ensuring optimal viewing across all device sizes.",
-        usage: "All web projects built mobile-first with flexible layouts and media queries."
+      "Object-Oriented Programming (OOP)": {
+        description: "A paradigm based on classes and encapsulated logic.",
+        usage: "I applied OOP in Java and C to design modular systems."
       },
-      "Component Architecture": {
-        description: "Building applications as collections of reusable, modular components.",
-        usage: "Structured React applications with clean separation of concerns and reusability."
+      "Algorithms & Data Structures": {
+        description: "Core CS concepts for solving computational problems efficiently.",
+        usage: "I practiced these extensively in Python and Java on LeetCode."
       },
-      "Version Control": {
-        description: "Systematic tracking and management of code changes over time.",
-        usage: "Git workflow with meaningful commits, branching strategies, and collaboration."
+      "Agile/Scrum": {
+        description: "A collaborative, iterative software development framework.",
+        usage: "I've followed Agile methods in class team projects and weekly sprints."
       },
-      "API Design": {
-        description: "Creating well-structured, documented interfaces for system communication.",
-        usage: "Designed RESTful endpoints with proper status codes and data validation."
+      "System Design": {
+        description: "The process of architecting scalable applications.",
+        usage: "I studied system design patterns and sketched mock architectures."
       },
-      "Testing & Debugging": {
-        description: "Systematic approach to finding and fixing software issues.",
-        usage: "Used Valgrind for memory debugging, console testing, and error handling."
+      "Test-Driven Development (TDD)": {
+        description: "A development practice of writing tests before code.",
+        usage: "I've practiced TDD in JavaScript using Jest for key features."
       }
     }
   }
