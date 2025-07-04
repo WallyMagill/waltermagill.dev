@@ -1,43 +1,12 @@
 /**
- * Project Portfolio Data Management
+ * Project portfolio data management
  * 
  * Centralized repository for all project information displayed in the portfolio.
  * Contains comprehensive project metadata including technical implementations,
  * visual assets, and professional context for recruiter evaluation.
  * 
- * Data Structure:
- * - Unique project identification with chronological ID system
- * - Technical stack documentation with specific frameworks and libraries
- * - Visual assets with proper imports and fallback handling
- * - External links to live demonstrations and source code repositories
- * - Team collaboration information and individual role specification
- * - Professional descriptions emphasizing problem-solving and technical skills
- * 
- * Project Selection Criteria:
- * - Demonstrates breadth across full-stack development
- * - Shows progression from academic exercises to production-ready applications
- * - Highlights different technical domains (web development, game development, AI/ML, systems)
- * - Emphasizes both individual work and collaborative team projects
- * - Includes both deployed applications and technical deep-dives
- * 
- * Asset Management:
- * - All images imported as ES6 modules for proper bundling
- * - Consistent naming convention for easy identification
- * - Fallback handling implemented in consuming components
- * - Optimized file sizes for web performance
- * 
- * Maintenance Guidelines:
- * - Add new projects with incrementing ID numbers (newest = highest ID)
- * - Ensure all external links are functional and HTTPS-enabled
- * - Update project descriptions to highlight most impressive technical aspects
- * - Refresh screenshots when significant UI improvements are made
- * - Verify all technology tags reflect actual implementation details
- * 
- * Professional Presentation:
- * - Projects ordered by ID (newest first) to highlight recent work
- * - Descriptions written in active voice to demonstrate ownership
- * - Technology stacks chosen to show versatility and modern practices
- * - Live demo links provided where applicable for immediate evaluation
+ * Features unique project identification, technical stack documentation,
+ * visual asset management, and professional presentation optimization.
  * 
  * @author Walter Magill
  */

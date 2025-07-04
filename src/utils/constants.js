@@ -1,31 +1,12 @@
 /**
- * Site Configuration and Global Constants
+ * Site configuration and global constants
  * 
- * Centralized configuration management for portfolio website settings, navigation structure,
- * and content constants. Provides a single source of truth for site-wide information that
- * may need updates across multiple components and deployment environments.
+ * Centralized configuration management for portfolio website settings,
+ * navigation structure, and content constants. Provides single source
+ * of truth for site-wide information across deployment environments.
  * 
- * Configuration Categories:
- * - Personal and professional contact information
- * - Social media and professional network links  
- * - Navigation structure and routing configuration
- * - Typewriter animation content for hero section
- * - SEO and metadata configuration
- * 
- * Maintenance Guidelines:
- * - Update SITE_CONFIG when contact information changes
- * - Modify NAVIGATION when adding/removing sections
- * - Refresh TYPEWRITER_WORDS to keep hero section engaging
- * - Ensure all URLs are current and properly formatted
- * 
- * Security Considerations:
- * - Email addresses are publicly visible (intentional for contact purposes)
- * - All URLs should use HTTPS for security and SEO benefits
- * - Social media links should be verified and current
- * 
- * Usage Pattern:
- * Import specific constants where needed rather than the entire file
- * Example: import { SITE_CONFIG } from '../../utils/constants'
+ * Features personal contact information, social media links, navigation
+ * structure, and typewriter animation content configuration.
  * 
  * @author Walter Magill
  */

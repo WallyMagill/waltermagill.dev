@@ -1,34 +1,56 @@
+/**
+ * Global CSS configuration with Tailwind integration
+ * 
+ * Comprehensive global stylesheet establishing professional design foundation
+ * through Tailwind CSS integration, custom component classes, and advanced
+ * browser optimizations for production-ready web applications.
+ * 
+ * Features complete utility-first CSS framework implementation, typography
+ * system, dark mode support, and performance optimization.
+ * 
+ * @author Walter Magill
+ */
+
+/* Tailwind CSS Framework Integration */
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+/* Professional Typography System - Google Fonts Integration */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
+/* Base Layer - Foundation Styles and Browser Normalization */
 @layer base {
+  /* Smooth Scrolling with Fixed Header Compensation */
   html {
     scroll-behavior: smooth;
     scroll-padding-top: 6rem; /* Account for fixed header */
   }
 
+  /* Global Theme System with Smooth Transitions */
   body {
     @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300;
   }
 
-  /* Ensure sections take full width */
+  /* Ensure sections take full width for proper layout */
   section {
     @apply w-full;
   }
 }
 
+/* Component Layer - Reusable Design Patterns */
 @layer components {
+  /* Container System - Responsive Content Wrapper */
   .container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 
+  /* Section Padding - Consistent Vertical Spacing */
   .section-padding {
     @apply py-16 sm:py-20 lg:py-24;
   }
 
+  /* Gradient Text - Brand Accent for Headings */
   .gradient-text {
     @apply bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent;
   }
@@ -38,13 +60,13 @@
     @apply transition-colors duration-200;
   }
 
-  /* Enhanced backdrop blur support */
+  /* Enhanced backdrop blur support with vendor prefixes */
   .backdrop-blur-md {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
   }
 
-  /* Custom scrollbar for webkit browsers */
+  /* Custom scrollbar styling for webkit browsers */
   ::-webkit-scrollbar {
     width: 8px;
   }
@@ -61,11 +83,12 @@
     @apply bg-gray-400 dark:bg-gray-500;
   }
 
-  /* Ensure hero section takes full viewport height minus header */
+  /* Hero Section - Full Viewport Height with Header Adjustment */
   #hero {
     min-height: calc(100vh - 4rem);
   }
 
+  /* Desktop Hero Optimization */
   @media (min-width: 1024px) {
     #hero {
       min-height: calc(100vh - 5rem);

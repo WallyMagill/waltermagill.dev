@@ -1,3 +1,30 @@
+/**
+ * Personal narrative and professional story content management
+ * 
+ * Centralized content repository for the About section containing comprehensive
+ * personal and professional narrative. Strategically crafted for recruiter
+ * evaluation, cultural fit assessment, and personal brand establishment.
+ * 
+ * Features modular content structure, progressive disclosure from personal
+ * foundation to professional goals, and balanced professional tone.
+ * 
+ * @author Walter Magill
+ */
+
+/**
+ * Complete personal and professional narrative structure for About section
+ * 
+ * @constant {Object} ABOUT_ME
+ * @property {string} title - Section heading for About component
+ * @property {Object} sections - Organized content sections for modular rendering
+ * 
+ * Section Organization:
+ * - Background: Geographic roots, athletic foundation, educational journey
+ * - What I Do: Technical expertise, academic focus, current learning activities
+ * - Beyond Code: Athletic accomplishments, lifestyle values, creative pursuits
+ * - How I Work: Professional working style, collaboration preferences, values
+ * - Now & Next: Current status, location, immediate availability for opportunities
+ */
 // Content management for portfolio site
 // This file centralizes all content that gets imported into React components
 export const ABOUT_ME = {

@@ -1,30 +1,13 @@
 /**
- * Professional Experience Timeline Component
+ * Professional experience timeline component
  * 
- * A responsive section component that presents work history through an elegant card-based layout.
- * Features chronological sorting, technology badges, and progressive disclosure of experience details.
- * Demonstrates data-driven rendering patterns and professional content presentation for recruiter review.
+ * Presents work history through an elegant card-based layout with
+ * chronological sorting, technology badges, and detailed role descriptions.
+ * Demonstrates career progression and technical skill development
+ * for recruiter evaluation.
  * 
- * Key Features:
- * - Chronological experience ordering (newest first)
- * - Responsive card layout with consistent spacing
- * - Technology stack visualization with branded badges
- * - Progressive disclosure with hover effects and micro-interactions
- * - Professional metadata display (company, location, duration)
- * - Accessibility-compliant semantic structure
- * 
- * Technical Implementation:
- * - Dynamic data sorting and rendering from centralized data source
- * - Framer Motion integration for staggered entrance animations
- * - Responsive grid system using Tailwind CSS utilities
- * - Icon-based information architecture for visual hierarchy
- * - Performance-optimized re-rendering with proper key management
- * 
- * Design Patterns:
- * - Separation of data and presentation logic
- * - Consistent visual theming across experience entries
- * - Professional typography and spacing system
- * - Mobile-first responsive design approach
+ * Features responsive design, progressive disclosure, and professional
+ * metadata display with consistent visual theming.
  * 
  * @author Walter Magill
  */

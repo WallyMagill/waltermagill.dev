@@ -1,27 +1,12 @@
 /**
- * Interactive Technology Stack Showcase Component
+ * Interactive technology stack showcase component
  * 
- * A sophisticated section component that displays technical skills through expandable cards 
- * organized in a responsive grid layout. Features hover animations, smooth transitions, and 
- * detailed technology descriptions with usage examples. Demonstrates advanced React patterns 
- * including dynamic state management, conditional rendering, and responsive design.
+ * Displays technical skills through expandable cards in a responsive grid layout.
+ * Features hover animations, smooth transitions, and detailed technology descriptions
+ * with usage examples for comprehensive skill demonstration.
  * 
- * Key Features:
- * - 6 technology categories in responsive 2x3 grid layout
- * - Interactive expandable cards with detailed descriptions
- * - Smooth animations and micro-interactions using Framer Motion
- * - Dynamic styling based on category themes
- * - Mobile-responsive design patterns
- * - Accessibility-compliant keyboard navigation
- * 
- * Technical Implementation:
- * - Advanced useState for complex UI state management
- * - Dynamic icon and color configuration system
- * - CSS-in-JS styling with Tailwind utility classes
- * - Framer Motion AnimatePresence for smooth enter/exit animations
- * - Performance-optimized re-renders with proper key management
- * 
- * Developed with assistance from AI tools for animation timing and responsive layout optimization.
+ * Demonstrates advanced React patterns including dynamic state management,
+ * conditional rendering, and accessibility-compliant keyboard navigation.
  * 
  * @author Walter Magill
  */

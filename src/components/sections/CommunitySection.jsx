@@ -1,38 +1,13 @@
 /**
- * Leadership and Community Involvement Showcase Component
+ * Community involvement and leadership showcase component
  * 
- * A professional section component that highlights leadership experience, community engagement,
- * and volunteer work through an organized card-based layout. Demonstrates character, values,
- * and leadership qualities that complement technical skills for recruiter evaluation.
+ * Displays leadership experience, volunteer work, and community engagement
+ * through a responsive card layout with thematic categorization.
+ * Demonstrates character, values, and collaborative abilities that complement
+ * technical skills for professional evaluation.
  * 
- * Key Features:
- * - Chronological organization of community involvement (newest first)
- * - Thematic categorization with visual indicators (Environment, Education, etc.)
- * - Responsive card layout with consistent professional styling
- * - Progressive disclosure with staggered entrance animations
- * - Leadership role emphasis for career advancement demonstration
- * - Accessibility-compliant semantic structure with proper ARIA attributes
- * 
- * Technical Implementation:
- * - Dynamic data sorting and rendering from centralized data source
- * - Framer Motion integration for engaging visual presentations
- * - Responsive grid system using Tailwind CSS utilities
- * - Icon-based visual hierarchy for enhanced readability
- * - Theme-based color coding for categorical organization
- * - Performance-optimized rendering with proper key management
- * 
- * Professional Value Proposition:
- * - Demonstrates leadership capabilities beyond technical skills
- * - Shows commitment to community and social responsibility
- * - Highlights diverse experience in multiple impact areas
- * - Provides evidence of collaboration and mentorship abilities
- * - Reinforces cultural fit for value-driven organizations
- * 
- * Design Patterns:
- * - Data-driven rendering with consistent theming
- * - Professional content organization and typography
- * - Mobile-first responsive design approach
- * - Clean separation of content and presentation logic
+ * Features chronological organization, visual category indicators, and
+ * progressive disclosure with staggered entrance animations.
  * 
  * @author Walter Magill
  */

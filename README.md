@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website showcasing my journey as a software engineer, recent Dartmouth graduate, and former NCAA Division I athlete. Built with React, Vite, and Tailwind CSS, featuring smooth animations, dark/light theme support, and an interactive particle background.
 
-**Live Site**: [TEMP](TEMP)
+**Live Site**: [waltermagill.dev](waltermagill.dev)
 
 ## Key Features
 
@@ -121,6 +121,6 @@ VITE_EMAILJS_PUBLIC_KEY=your_public_key
 ---
 
 **Walter Magill** - Software Engineer  
-walter.g.magill@gmail.com | [LinkedIn](https://www.linkedin.com/in/walter-magill-40023a249/) | [Portfolio](TEMP)
+walter.g.magill@gmail.com | [LinkedIn](https://www.linkedin.com/in/walter-magill-40023a249/) | [Portfolio](waltermagill.dev)
 
 *Building modern web experiences with clean code and thoughtful design*
