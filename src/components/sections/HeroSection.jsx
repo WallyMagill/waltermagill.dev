@@ -191,7 +191,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Animated Scroll Indicator */}
+      {/* Animated Scroll Indicator - Updated to point to tech-stack */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -199,7 +199,7 @@ const HeroSection = () => {
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10"
       >
         <motion.button
-          onClick={() => scrollToSection('about')}
+          onClick={() => scrollToSection('tech-stack')}
           animate={{ y: [0, 10, 0] }}
           transition={{ 
             duration: 2, 
@@ -207,7 +207,7 @@ const HeroSection = () => {
             ease: "easeInOut" 
           }}
           className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 transition-colors p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800"
-          aria-label="Scroll to about section"
+          aria-label="Scroll to tech stack section"
         >
           <ChevronDown className="w-6 h-6" />
         </motion.button>

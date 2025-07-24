@@ -15,13 +15,15 @@ import { useState, useEffect, useRef } from 'react';
 
 /**
  * Navigation items configuration for consistent routing
- * Centralized to make navigation updates easier
+ * Updated to reflect new section order with About moved before Contact
  */
 const NAVIGATION_ITEMS = [
   { name: 'Home', sectionId: 'hero' },
-  { name: 'About', sectionId: 'about' },
+  { name: 'Skills', sectionId: 'skills' },
   { name: 'Projects', sectionId: 'projects' },
   { name: 'Experience', sectionId: 'experience' },
+  { name: 'Community', sectionId: 'community' },
+  { name: 'About', sectionId: 'about' },
   { name: 'Contact', sectionId: 'contact' },
 ];
 
@@ -100,20 +102,20 @@ const Layout = ({ children }) => {
       {/* Fixed Header with Responsive Background Strategy */}
       <header className="fixed top-0 left-0 w-full z-50 transition-all duration-300">
         {/* 
-          Mobile-first background: Always visible on mobile to prevent text overlay
-          Desktop: Completely transparent - no background at any time
+          Mobile-first background: Always visible on mobile/tablet to prevent text overlay
+          Desktop (xl+): Completely transparent - no background at any time
         */}
         <div className={`
           relative flex items-center justify-between h-16 px-4 sm:px-8
           bg-white/90 dark:bg-gray-900/90 backdrop-blur-md
-          md:bg-transparent md:backdrop-blur-none
+          xl:bg-transparent xl:backdrop-blur-none
         `}>
           
           {/* Site Branding */}
-          <div className="flex items-center flex-1 min-w-0">
+          <div className="flex items-center flex-shrink-0 min-w-0 max-w-[200px]">
             <button
               onClick={() => scrollToSection('hero')}
-              className="text-xl font-bold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer"
+              className="text-xl font-bold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer truncate"
               style={{ letterSpacing: '-0.01em' }}
               aria-label="Return to top of page"
             >
@@ -121,30 +123,35 @@ const Layout = ({ children }) => {
             </button>
           </div>
 
-          {/* Desktop Navigation - Only visible when scrolled */}
+          {/* Desktop Navigation - Centered with proper spacing - Only on extra large screens */}
           <nav
-            className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden md:flex items-center space-x-8 px-6 py-2 transition-all duration-300 ${
+            className={`hidden xl:flex items-center justify-center flex-1 mx-8 transition-all duration-300 ${
               isScrolled
-                ? 'opacity-100 bg-white/70 dark:bg-gray-900/70 backdrop-blur-md rounded-full shadow-lg border border-gray-200 dark:border-gray-700'
-                : 'opacity-0 pointer-events-none bg-transparent'
+                ? 'opacity-100'
+                : 'opacity-0 pointer-events-none'
             }`}
-            style={{ zIndex: 10 }}
             aria-label="Main navigation"
           >
-            {NAVIGATION_ITEMS.map((item) => (
-              <button
-                key={item.name}
-                onClick={() => scrollToSection(item.sectionId)}
-                className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors cursor-pointer px-3 py-1 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400"
-                aria-label={`Navigate to ${item.name} section`}
-              >
-                {item.name}
-              </button>
-            ))}
+            <div className={`flex items-center space-x-6 px-6 py-2 transition-all duration-300 ${
+              isScrolled
+                ? 'bg-white/70 dark:bg-gray-900/70 backdrop-blur-md rounded-full shadow-lg border border-gray-200 dark:border-gray-700'
+                : 'bg-transparent'
+            }`}>
+              {NAVIGATION_ITEMS.map((item) => (
+                <button
+                  key={item.name}
+                  onClick={() => scrollToSection(item.sectionId)}
+                  className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors cursor-pointer px-3 py-1 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400 whitespace-nowrap"
+                  aria-label={`Navigate to ${item.name} section`}
+                >
+                  {item.name}
+                </button>
+              ))}
+            </div>
           </nav>
 
           {/* Theme Toggle & Mobile Menu Controls */}
-          <div className="flex items-center flex-1 justify-end gap-2 min-w-0">
+          <div className="flex items-center flex-shrink-0 justify-end gap-2 min-w-0">
             <button
               onClick={toggleTheme}
               className="p-2 rounded-full bg-white/70 dark:bg-gray-900/70 border border-gray-200 dark:border-gray-700 backdrop-blur-md text-gray-600 dark:text-gray-300 hover:bg-white/80 dark:hover:bg-gray-900/80 transition-colors transition-all"
@@ -156,7 +163,7 @@ const Layout = ({ children }) => {
             {/* Mobile Menu Toggle */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+              className="xl:hidden p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
               aria-label={`${isMobileMenuOpen ? 'Close' : 'Open'} mobile menu`}
               aria-expanded={isMobileMenuOpen}
             >
@@ -167,7 +174,7 @@ const Layout = ({ children }) => {
 
         {/* Mobile Navigation Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden border-t border-gray-200 dark:border-gray-700 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md">
+          <div className="xl:hidden border-t border-gray-200 dark:border-gray-700 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md">
             <nav className="py-4 space-y-2 flex flex-col items-center" role="navigation">
               {NAVIGATION_ITEMS.map((item) => (
                 <button

@@ -111,7 +111,7 @@ const CommunitySection = () => {
   // Error handling for missing community data
   if (!communityData || communityData.length === 0) {
     return (
-      <section id="community" className="section-padding bg-gray-50 dark:bg-gray-800">
+      <section id="community" className="section-padding">
         <div className="container">
           <div className="text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-8">
@@ -127,7 +127,7 @@ const CommunitySection = () => {
   }
 
   return (
-    <section id="community" className="section-padding bg-gray-50 dark:bg-gray-800">
+    <section id="community" className="section-padding">
       <div className="container">
         <motion.div
           ref={ref}

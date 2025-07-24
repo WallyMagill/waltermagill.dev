@@ -36,21 +36,29 @@ export const SITE_CONFIG = {
 
 /**
  * Navigation structure configuration for consistent site navigation
- * Defines the main navigation items and their corresponding section IDs
+ * Updated to reflect the new section order with About moved before Contact
  * 
  * @constant {Array} NAVIGATION
  * @property {string} name - Display name for navigation item
- * @property {string} href - URL path or section ID for navigation target
+ * @property {string} href - Section ID for smooth scroll navigation
  * 
- * Note: Currently configured for single-page application with section-based navigation
- * Can be easily modified for multi-page routing if site structure changes
+ * New Section Order:
+ * 1. Home (Hero)
+ * 2. Tech Stack
+ * 3. Projects
+ * 4. Experience  
+ * 5. Community
+ * 6. About (moved to second-to-last position)
+ * 7. Contact
  */
 export const NAVIGATION = [
-  { name: 'Home', href: '/' },
-  { name: 'About', href: '/about' },
-  { name: 'Projects', href: '/projects' },
-  { name: 'Experience', href: '/experience' },
-  { name: 'Contact', href: '/contact' },
+  { name: 'Home', href: '#hero' },
+  { name: 'Skills', href: '#skills' },
+  { name: 'Projects', href: '#projects' },
+  { name: 'Experience', href: '#experience' },
+  { name: 'Community', href: '#community' },
+  { name: 'About', href: '#about' },
+  { name: 'Contact', href: '#contact' },
 ];
 
 /**

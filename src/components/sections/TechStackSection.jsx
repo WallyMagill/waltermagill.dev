@@ -134,7 +134,7 @@ const TechStackSection = () => {
   };
 
   return (
-    <section className="section-padding bg-gray-50 dark:bg-gray-800">
+    <section id="skills" className="section-padding bg-gray-50 dark:bg-gray-800">
       <div className="container">
         <motion.div
           ref={ref}
