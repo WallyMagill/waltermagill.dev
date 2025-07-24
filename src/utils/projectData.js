@@ -13,6 +13,7 @@
 
 // Project screenshot imports for optimal bundling and performance
 // Images stored in assets directory with descriptive naming convention
+import porfolioImage from '../assets/portfolio-website-screenshot.jpg';
 import lessonlinkImage from '../assets/lessonlink-screenshot.jpg';
 import echoEchoImage from '../assets/echo-echo-screenshot.jpg';
 import neuralNetworkImage from '../assets/neural-network-chart.jpg';
@@ -36,6 +37,15 @@ import tseImage from '../assets/tse-diagram.jpg';
  * of additional projects without disrupting the chronological ordering system.
  */
 export const PROJECTS = [
+  {
+    id: 5,
+    title: "Personal Portfolio Website",
+    description: "A modern, responsive portfolio website showcasing my journey as a software engineer, recent Dartmouth graduate, and former NCAA Division I athlete. Features interactive particle background, smooth animations, dark/light theme support, and dynamic content with optimized performance.",
+    technologies: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion', 'EmailJS', 'Lucide React', 'HTML5 Canvas'],
+    image: porfolioImage,
+    github: 'https://github.com/WallyMagill/waltermagill.dev',
+    live: 'https://waltermagill.dev'
+  },
   {
     id: 4,
     title: "LessonLink",
