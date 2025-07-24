@@ -37,6 +37,15 @@ import tseImage from '../assets/tse-diagram.jpg';
  */
 export const PROJECTS = [
   {
+    id: 5,
+    title: "Personal Portfolio Website",
+    description: "A modern, responsive portfolio website showcasing my journey as a software engineer, recent Dartmouth graduate, and former NCAA Division I athlete. Features interactive particle background, smooth animations, dark/light theme support, and dynamic content with optimized performance.",
+    technologies: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion', 'EmailJS', 'Lucide React', 'HTML5 Canvas'],
+    image: 'https://github.com/WallyMagill/lessonlink',
+    github: 'https://github.com/WallyMagill/waltermagill.dev',
+    live: 'https://waltermagill.dev'
+  },
+  {
     id: 4,
     title: "LessonLink",
     description: "A collaborative web platform for educators to create, share, and remix interactive lesson plans. Features real-time collaboration, rich text editing, and a community-driven approach to educational content creation.",
