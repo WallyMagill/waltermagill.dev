@@ -18,6 +18,7 @@ import lessonlinkImage from '../assets/lessonlink-screenshot.jpg';
 import echoEchoImage from '../assets/echo-echo-screenshot.jpg';
 import neuralNetworkImage from '../assets/neural-network-chart.jpg';
 import tseImage from '../assets/tse-diagram.jpg';
+import econlensImage from '../assets/econlens-screenshot.jpg'; // Add this image to your assets folder
 
 /**
  * Comprehensive project portfolio data array
@@ -33,10 +34,19 @@ import tseImage from '../assets/tse-diagram.jpg';
  * @property {string} [role] - Specific role and contributions (for team projects)
  * @property {Array<string>} [team] - Team member information (for collaborative projects)
  * 
- * Projects are intentionally numbered with gaps (1,2,3,4) to allow for easy insertion
+ * Projects are intentionally numbered with gaps (1,2,3,4,5,6) to allow for easy insertion
  * of additional projects without disrupting the chronological ordering system.
  */
 export const PROJECTS = [
+  {
+    id: 6,
+    title: "EconLens",
+    description: "A comprehensive financial portfolio management platform built with AWS cloud architecture. Features real-time portfolio tracking, economic scenario modeling, and advanced analytics with secure user authentication and scalable infrastructure (IN PROGRESS).",
+    technologies: ['React', 'TypeScript', 'AWS CDK', 'AWS Lambda', 'PostgreSQL', 'AWS Cognito', 'Node.js', 'Express', 'AWS EC2', 'AWS S3', 'CloudFront'],
+    image: econlensImage,
+    github: 'https://github.com/WallyMagill/EcoLens',
+    live: 'http://econlens-frontend-prod.s3-website-us-east-1.amazonaws.com/dashboard' // Update this if you have a custom domain
+  },
   {
     id: 5,
     title: "Personal Portfolio Website",
